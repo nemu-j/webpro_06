@@ -49,6 +49,16 @@ app.get("/lol", (req, res) => {
   res.render('lol', { data: lol });
 });
 
+app.get("/lol_add", (req, res) => {
+  let id = req.query.id;
+  let team = req.query.team;
+  let region = req.query.region;
+  let code = req.query.code;
+  let newdata = { id: id, team: team, region: region, code: code };
+  lol.push( newdata );
+  res.render('lol', { data: lol });
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";
