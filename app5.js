@@ -35,6 +35,20 @@ app.get("/keiyo_add", (req, res) => {
   res.render('db2', { data: station });
 });
 
+let lol = [
+  { id:1, team:"T1", region:"LCK", code:"T1"},
+  { id:2, team:"Gen.G", region:"LCK", code:"GEN"},
+  { id:3, team:"Hanwha Life Esports", region:"LCK", code:"HLE"},
+  { id:4, team:"Bilibili Gaming", region:"LPL", code:"BLG"},
+  { id:5, team:"Top Esports", region:"LPL", code:"TES"},
+  { id:6, team:"G2 Esports", region:"LEC", code:"G2"},
+  { id:7, team:"FlyQuest", region:"LCS", code:"FLY"},
+];
+
+app.get("/lol", (req, res) => {
+  res.render('lol', { data: lol });
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";

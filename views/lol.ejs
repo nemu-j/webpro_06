@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LoLのチーム</title>
+</head>
+<body>
+  <h2>LoLのチーム一覧</h2>
+  <table>
+    <tr><th>ID</th><th>チーム名</th><th>地域リーグ</th><th>略称</th></tr>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td>
+        <td><%= row.team %></td>
+        <td><%= row.region %></td>
+        <td><%= row.code %></td></tr>
+      <% } %>
+  </table>
+</body>
+</html>
