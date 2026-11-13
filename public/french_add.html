@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>料理を追加する</title>
+</head>
+<body>
+    <form action="/french_add">
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id" required><br>
+
+        <label for="name">料理名</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="course">コース</label>
+        <input type="text" name="course" id="course" required><br>
+
+        <label for="ingredient">主な食材</label>
+        <input type="text" name="ingredient" id="ingredient" required><br>
+
+        <label for="price">価格（円）</label>
+        <input type="number" name="price" id="price" required><br>
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>

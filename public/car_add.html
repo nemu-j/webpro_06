@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>スポーツカーを追加する</title>
+</head>
+<body>
+    <form action="/car_add">
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id" required><br>
+
+        <label for="name">車名</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="maker">メーカー</label>
+        <input type="text" name="maker" id="maker" required><br>
+
+        <label for="country">メーカーの国</label>
+        <input type="text" name="country" id="country" required><br>
+
+        <label for="engine">エンジン</label>
+        <input type="text" name="engine" id="engine" required><br>
+
+        <label for="power">最高出力（PS）</label>
+        <input type="number" name="power" id="power" required><br>
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>

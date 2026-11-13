@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LoLのチーム一覧</title>
+</head>
+<body>
+  <h2>LoLのチーム一覧</h2>
+  <table>
+    <tr><th>ID</th><th>チーム名</th><th>地域リーグ</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td><td><a href="/lol/<%= number %>"><%= row.team %></a></td><td><%= row.region %></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/public/lol_add.html">追加する</a>
+</body>
+</html>

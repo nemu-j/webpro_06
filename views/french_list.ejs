@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>フレンチのメニュー一覧</title>
+</head>
+<body>
+  <h2>フレンチのメニュー一覧</h2>
+  <table>
+    <tr><th>ID</th><th>料理名</th><th>コース</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td><td><a href="/french/<%= number %>"><%= row.name %></a></td><td><%= row.course %></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/public/french_add.html">追加する</a>
+</body>
+</html>

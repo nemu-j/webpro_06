@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.team %></title>
+</head>
+<body>
+  <h2><%= data.team %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>チーム名</td><td><%= data.team %></td></tr>
+    <tr><td>地域リーグ</td><td><%= data.region %></td></tr>
+    <tr><td>略称</td><td><%= data.code %></td></tr>
+    <tr><td>拠点</td><td><%= data.country %></td></tr>
+  </table>
+  <a href="/lol">チーム一覧に戻る</a>
+</body>
+</html>
